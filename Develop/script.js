@@ -2,7 +2,8 @@
 function displayCurrent() {
 var displayCurrentDay = dayjs().format('MMM DD, YYYY [at ]h:mm:ss A');
 $('#currentDay').text(displayCurrentDay);
-}
+};
+
 
 
 
@@ -85,45 +86,133 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
-  //
+
+  // Sets currentHour equal to current time as a 2digit value 0-23
+  var currentHour = dayjs().hour();
+  console.log(currentHour);
+
+
+  var hour9 = document.getElementById('hour-9').value = 09;
+
+  $('#hour-9').toggleClass(function() {
+    if (hour9 < currentHour) {
+      return 'past';
+    } else if (hour9 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+  
+
+  var hour10 = document.getElementById('hour-10').value = 10;
+
+  $('#hour-10').toggleClass(function() {
+    if (hour10 < currentHour) {
+      return 'past';
+    } else if (hour10 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+  
+
+  var hour11 = document.getElementById('hour-11').value = 11;
+
+  $('#hour-11').toggleClass(function() {
+    if (hour11 < currentHour) {
+      return 'past';
+    } else if (hour11 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+  
+
+  var hour12 = document.getElementById('hour-12').value = 12;
+
+  $('#hour-12').toggleClass(function() {
+    if (hour12 < currentHour) {
+      return 'past';
+    } else if (hour12 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+
+
+  var hour1 = document.getElementById('hour-1').value = 13;
+
+  $('#hour-1').toggleClass(function() {
+    if (hour1 < currentHour) {
+      return 'past';
+    } else if (hour1 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+  
+  
+  var hour2 = document.getElementById('hour-2').value = 14;
+
+  $('#hour-2').toggleClass(function() {
+    if (hour2 < currentHour) {
+      return 'past';
+    } else if (hour2 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+  
+  
+  var hour3 = document.getElementById('hour-3').value = 15;
+
+  $('#hour-3').toggleClass(function() {
+    if (hour3 < currentHour) {
+      return 'past';
+    } else if (hour3 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+  
+  
+  var hour4 = document.getElementById('hour-4').value = 16;
+
+  $('#hour-4').toggleClass(function() {
+    if (hour4 < currentHour) {
+      return 'past';
+    } else if (hour4 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+  
+  
+  var hour5 = document.getElementById('hour-5').value = 17;
+
+  $('#hour-5').toggleClass(function() {
+    if (hour5 < currentHour) {
+      return 'past';
+    } else if (hour5 > currentHour) {
+      return 'future';
+    } else {
+      return 'present';
+    }
+  });
+
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  // Gets saved textarea inputs from local storge and sets them in the correct hour on the hour sheet
-  var storedh9 = localStorage.getItem('hour-9', storedh9);
-  document.getElementById('hour-9').value = storedh9;
 
-  // 
-  var storedh10 = localStorage.getItem('hour-10', storedh10);
-  document.getElementById('hour-10').value = storedh10;
 
-  // 
-  var storedh11 = localStorage.getItem('hour-11', storedh11);
-  document.getElementById('hour11').value = storedh11;
-
-  // 
-  var storedh12 = localStorage.getItem('hour-12', storedh12);
-  document.getElementById('hour-12').value = storedh12;
-
-  // 
-  var storedh1 = localStorage.getItem('hour-1', storedh1);
-  document.getElementById('hour-1').value = storedh1;
-
-  // 
-  var storedh2 = localStorage.getItem('hour-2', storedh2);
-  document.getElementById('hour-2').value = storedh2;
-
-  // 
-  var storedh3 = localStorage.getItem('hour-3', storedh3);
-  document.getElementById('hour-3').value = storedh3;
-
-  // 
-  var storedh4 = localStorage.getItem('hour-4', storedh4);
-  document.getElementById('hour-4').value = storedh4;
-
-  // 
-  var storedh5 = localStorage.getItem('hour-5', storedh5);
-  document.getElementById('hour-5').value = storedh5;
   // TODO: Add code to display the current date in the header of the page.\
   // calls the displayCurrent() function
   displayCurrent();
