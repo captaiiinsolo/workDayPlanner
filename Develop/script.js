@@ -18,10 +18,50 @@ $(function () {
   // useful when saving the description in local storage?
   
   // Adds event listener to saveBtn's 
+  $('#hour-9 button').on('click', function() {
+    var h11 = document.getElementById('h9').value;
+    localStorage.setItem('hour-9', h11);
+    console.log(h9)
+  })
+  $('#hour-10 button').on('click', function() {
+    var h11 = document.getElementById('h10').value;
+    localStorage.setItem('hour-10', h10);
+    console.log(h10)
+  })
   $('#hour-11 button').on('click', function() {
     var h11 = document.getElementById('h11').value;
     localStorage.setItem('hour-11', h11);
     console.log(h11)
+  })
+  $('#hour-12 button').on('click', function() {
+    var h11 = document.getElementById('h12').value;
+    localStorage.setItem('hour-12', h12);
+    console.log(h12)
+  })
+  $('#hour-1 button').on('click', function() {
+    var h11 = document.getElementById('h1').value;
+    localStorage.setItem('hour-1', h1);
+    console.log(h1)
+  })
+  $('#hour-2 button').on('click', function() {
+    var h11 = document.getElementById('h2').value;
+    localStorage.setItem('hour-2', h2);
+    console.log(h2)
+  })
+  $('#hour-3 button').on('click', function() {
+    var h11 = document.getElementById('h3').value;
+    localStorage.setItem('hour-3', h3);
+    console.log(h3)
+  })
+  $('#hour-4 button').on('click', function() {
+    var h11 = document.getElementById('h4').value;
+    localStorage.setItem('hour-4', h4);
+    console.log(h4)
+  })
+  $('#hour-5 button').on('click', function() {
+    var h11 = document.getElementById('h5').value;
+    localStorage.setItem('hour-5', h5);
+    console.log(h5)
   })
   //
   // TODO: Add code to apply the past, present, or future class to each time
