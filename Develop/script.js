@@ -4,9 +4,6 @@ var displayCurrentDay = dayjs().format('MMM DD, YYYY [at ]h:mm:ss A');
 $('#currentDay').text(displayCurrentDay);
 };
 
-
-
-
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -211,6 +208,51 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
+  var storedH9 = localStorage.getItem('hour-9');
+  document.getElementById('h9').value = storedH9;
+  console.log(storedH9);
+  
+  
+  var storedH10 = localStorage.getItem('hour-10');
+  document.getElementById('h10').value = storedH10;
+  console.log(storedH10);
+  
+  
+  var storedH11 = localStorage.getItem('hour-11');
+  document.getElementById('h11').value = storedH11;
+  console.log(storedH11);
+  
+  
+  var storedH12 = localStorage.getItem('hour-12');
+  document.getElementById('h12').value = storedH12;
+  console.log(storedH12);
+  
+  
+  var storedH1 = localStorage.getItem('hour-1');
+  document.getElementById('h1').value = storedH1;
+  console.log(storedH1);
+  
+  
+  var storedH2 = localStorage.getItem('hour-2');
+  document.getElementById('h2').value = storedH2;
+  console.log(storedH2);
+  
+  
+  var storedH3 = localStorage.getItem('hour-3');
+  document.getElementById('h3').value = storedH3;
+  console.log(storedH3);
+  
+  
+  var storedH4 = localStorage.getItem('hour-4');
+  document.getElementById('h4').value = storedH4;
+  console.log(storedH4);
+  
+  
+  var storedH5 = localStorage.getItem('hour-5');
+  document.getElementById('h5').value = storedH5;
+  console.log(storedH5);
+
+
 
 
   // TODO: Add code to display the current date in the header of the page.\
