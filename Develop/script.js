@@ -1,6 +1,6 @@
 // Appends the current date and  time to #currentDay located in the header section on index.html 
 function displayCurrent() {
-var displayCurrentDay = dayjs().format('MMM DD, YYYY [at ]h:mm:ss A');
+var displayCurrentDay = dayjs().format('ddd MMM DD, YYYY [at ]h:mm:ss A');
 $('#currentDay').text(displayCurrentDay);
 };
 
@@ -77,7 +77,6 @@ $(function () {
 
   // Sets currentHour equal to current time as a 2digit value 0-23
   var currentHour = dayjs().hour();
-  console.log(currentHour);
 
   // compares current hour agains hour of timeblock and toggles the appropriate
   var hour9 = document.getElementById('hour-9').value = 09;
