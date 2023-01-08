@@ -1,3 +1,9 @@
+// Appends the current date and  time to #currentDay located in the header section on index.html 
+function displayCurrent() {
+var displayCurrentDay = dayjs().format('MMM DD, YYYY [at ]h:mm:ss A');
+$('#currentDay').text(displayCurrentDay);
+}
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -19,5 +25,11 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  // TODO: Add code to display the current date in the header of the page.
+  // TODO: Add code to display the current date in the header of the page.\
+  // calls the displayCurrent() function
+  displayCurrent();
+  
+  // Sets the interval of displayCurrent() to count the time in current seconds.
+  setInterval(displayCurrent, 1000);
+ 
 });
