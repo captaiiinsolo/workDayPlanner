@@ -88,7 +88,7 @@ $(function () {
   var currentHour = dayjs().hour();
   console.log(currentHour);
 
-
+  // compares current hour agains hour of timeblock and toggles the appropriate
   var hour9 = document.getElementById('hour-9').value = 09;
 
   $('#hour-9').toggleClass(function() {
@@ -101,7 +101,7 @@ $(function () {
     }
   });
   
-
+  // compares current hour agains hour of timeblock and toggles the appropriate
   var hour10 = document.getElementById('hour-10').value = 10;
 
   $('#hour-10').toggleClass(function() {
@@ -114,7 +114,7 @@ $(function () {
     }
   });
   
-
+  // compares current hour agains hour of timeblock and toggles the appropriate
   var hour11 = document.getElementById('hour-11').value = 11;
 
   $('#hour-11').toggleClass(function() {
@@ -127,7 +127,7 @@ $(function () {
     }
   });
   
-
+  // compares current hour agains hour of timeblock and toggles the appropriate
   var hour12 = document.getElementById('hour-12').value = 12;
 
   $('#hour-12').toggleClass(function() {
@@ -140,7 +140,7 @@ $(function () {
     }
   });
 
-
+  // compares current hour agains hour of timeblock and toggles the appropriate
   var hour1 = document.getElementById('hour-1').value = 13;
 
   $('#hour-1').toggleClass(function() {
@@ -153,7 +153,7 @@ $(function () {
     }
   });
   
-  
+  // compares current hour agains hour of timeblock and toggles the appropriate  
   var hour2 = document.getElementById('hour-2').value = 14;
 
   $('#hour-2').toggleClass(function() {
@@ -166,7 +166,7 @@ $(function () {
     }
   });
   
-  
+  // compares current hour agains hour of timeblock and toggles the appropriate 
   var hour3 = document.getElementById('hour-3').value = 15;
 
   $('#hour-3').toggleClass(function() {
@@ -179,7 +179,7 @@ $(function () {
     }
   });
   
-  
+  // compares current hour agains hour of timeblock and toggles the appropriate  
   var hour4 = document.getElementById('hour-4').value = 16;
 
   $('#hour-4').toggleClass(function() {
@@ -192,7 +192,7 @@ $(function () {
     }
   });
   
-  
+  // compares current hour agains hour of timeblock and toggles the appropriate  
   var hour5 = document.getElementById('hour-5').value = 17;
 
   $('#hour-5').toggleClass(function() {
@@ -208,54 +208,45 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
+  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH9 = localStorage.getItem('hour-9');
   document.getElementById('h9').value = storedH9;
-  console.log(storedH9);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH10 = localStorage.getItem('hour-10');
   document.getElementById('h10').value = storedH10;
-  console.log(storedH10);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH11 = localStorage.getItem('hour-11');
   document.getElementById('h11').value = storedH11;
-  console.log(storedH11);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH12 = localStorage.getItem('hour-12');
   document.getElementById('h12').value = storedH12;
-  console.log(storedH12);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH1 = localStorage.getItem('hour-1');
   document.getElementById('h1').value = storedH1;
-  console.log(storedH1);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH2 = localStorage.getItem('hour-2');
   document.getElementById('h2').value = storedH2;
-  console.log(storedH2);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH3 = localStorage.getItem('hour-3');
   document.getElementById('h3').value = storedH3;
-  console.log(storedH3);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH4 = localStorage.getItem('hour-4');
   document.getElementById('h4').value = storedH4;
-  console.log(storedH4);
   
-  
+  // Retrieves stored user input and displays it in the correct timeblock textarea 
   var storedH5 = localStorage.getItem('hour-5');
   document.getElementById('h5').value = storedH5;
-  console.log(storedH5);
 
 
-
-
-  // TODO: Add code to display the current date in the header of the page.\
+  // TODO: Add code to display the current date in the header of the page.
   // calls the displayCurrent() function
   displayCurrent();
 
