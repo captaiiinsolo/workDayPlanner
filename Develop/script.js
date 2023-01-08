@@ -19,63 +19,54 @@ $(function () {
   $('#hour-9 button').on('click', function() {
     var h9 = document.getElementById('h9').value;
     localStorage.setItem('hour-9', h9);
-    console.log(h9)
   });
 
   // Adds event listener to hour-10 saveBtn
   $('#hour-10 button').on('click', function() {
     var h10 = document.getElementById('h10').value;
     localStorage.setItem('hour-10', h10);
-    console.log(h10)
   });
 
   // Adds event listener to hour-11 saveBtn
   $('#hour-11 button').on('click', function() {
     var h11 = document.getElementById('h11').value;
     localStorage.setItem('hour-11', h11);
-    console.log(h11)
   });
 
   // Adds event listener to hour-12 saveBtn
   $('#hour-12 button').on('click', function() {
     var h12 = document.getElementById('h12').value;
     localStorage.setItem('hour-12', h12);
-    console.log(h12)
   });
 
   // Adds event listener to hour-1 saveBtn
   $('#hour-1 button').on('click', function() {
     var h1 = document.getElementById('h1').value;
     localStorage.setItem('hour-1', h1);
-    console.log(h1)
   });
 
   // Adds event listener to hour-2 saveBtn
   $('#hour-2 button').on('click', function() {
     var h2 = document.getElementById('h2').value;
     localStorage.setItem('hour-2', h2);
-    console.log(h2)
   });
 
   // Adds event listener to hour-3 saveBtn
   $('#hour-3 button').on('click', function() {
     var h3 = document.getElementById('h3').value;
     localStorage.setItem('hour-3', h3);
-    console.log(h3)
   });
 
   // Adds event listener to hour-4 saveBtn
   $('#hour-4 button').on('click', function() {
     var h4 = document.getElementById('h4').value;
     localStorage.setItem('hour-4', h4);
-    console.log(h4)
   });
 
   // Adds event listener to hour-5 saveBtn
   $('#hour-5 button').on('click', function() {
     var h5 = document.getElementById('h5').value;
     localStorage.setItem('hour-5', h5);
-    console.log(h5)
   });
   //
   // TODO: Add code to apply the past, present, or future class to each time
