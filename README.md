@@ -15,7 +15,7 @@
 
 [Visit the deployed site](https://captaiiinsolo.github.io/workDayPlanner/)
 
-For this project I was asked to create a day scheduler for a busy employee who wanted a simple way to track their work day. When the user opens the webpage they are immediately taken to the work day scheduler where they can see the current date and time displayed at the top of the page. Below the current date and time display is the scheduler itself. Depending on the time of day the time blocks will display 1 of 3 background colors indicating that the time block is either in the past (light gray), present (red), or future (green). The is able to enter calendar events in the text area section of the planner and can save the event via the corresponding save button. When the user closes and returns to the webpage, their saved entries will still be displayed. 
+For this project I was asked to create a day scheduler for a busy employee who wanted a simple way to track their work day. When the user opens the webpage they are immediately taken to the work day scheduler where they can see the current date and time displayed at the top of the page. Below the current date and time display is the scheduler itself. Depending on the time of day the time blocks will display 1 of 3 background colors indicating that the time block is either in the past (light gray), present (red), or future (green). The user is able to enter calendar events in the text area section of the planner and can save the event via the corresponding save button. When the user closes and returns to the webpage, their saved entries will still be displayed. 
 
 
 
